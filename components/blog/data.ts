@@ -1,4 +1,3 @@
-import Image1 from './images/1.png';
 export const Data = [{
 	typelist: [
 		{
