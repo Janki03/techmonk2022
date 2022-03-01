@@ -49,15 +49,15 @@ const Blog: React.FC<any> = (props: any) => {
 					/>
 					<div>
 						{Data.map((data, key) => {
-							let { typelist }: any = data;
-							const fuse = new Fuse(data.typelist, options);
-							typelist = fuse.search(query);
-							typelist = query ? typelist.map((data) => data.item) : data.typelist;
+							let { bloglist }: any = data;
+							const fuse = new Fuse(data.bloglist, options);
+							bloglist = fuse.search(query);
+							bloglist = query ? bloglist.map((data) => data.item) : data.bloglist;
 							return (
 								<div key={key}>
 									{
-										typelist.length !== 0 &&
-										typelist.map((d, idx) => (
+										bloglist.length !== 0 &&
+										bloglist.map((d, idx) => (
 											<ScrollAnimation
 												wrapperElement="div"
 												toggleClass="fade"

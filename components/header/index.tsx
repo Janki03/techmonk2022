@@ -14,7 +14,7 @@ const Header: React.FC<any> = (props: any) => {
 		{ name: 'Blog', href: '/blog/', current: true },
 		{ name: 'Team', href: '/about/', current: false },
 		{ name: 'Case Studies', href: '#', current: false },
-		{ name: 'Jobs', href: '#', current: false },
+		{ name: 'Jobs', href: '/job/', current: false },
 	]
 	const mobilenavigation = [
 		{ name: 'Privacy Policy for Merchants', href: '#', current: false },

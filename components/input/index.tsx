@@ -1,11 +1,11 @@
+import cn from 'classnames';
 import Image from 'next/image';
 import styles from './input.module.scss';
 
 const Input: React.FC<any> = (props: any) => {
   const {
-    children,
     className,
-    inputclassName,
+    children,
     type,
     name,
     labeltext,
@@ -13,9 +13,12 @@ const Input: React.FC<any> = (props: any) => {
     righticon,
     ...restProps
   } = props;
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
   return (
     <>
-      <div className={styles['form-group']}>
+      <div className={cn(styles['form-group'], styles[classNames(className)])}>
         <input
           type={type}
           className={styles['form-control']}

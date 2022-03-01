@@ -76,6 +76,36 @@
   visibility: hidden;
   pointer-events: none;
 }
+.image1 {
+  // position: absolute;
+  // width: 50%;
+  // height: 100%;
+  // object-fit: cover;
+  // transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 50%;
+  > span {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 300px;
+    width: 300px;
+    img {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      z-index: -10;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+}
 //single blog
 .post-box,
 .banner {

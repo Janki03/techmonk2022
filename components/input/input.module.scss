@@ -61,3 +61,8 @@
   pointer-events: none;
   margin: rem(20px) 0 0 rem(20px);
 }
+.bg-transparent {
+  input {
+    background-color: transparent;
+  }
+}

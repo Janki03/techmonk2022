@@ -1,5 +1,5 @@
 export const Data = [{
-	typelist: [
+	bloglist: [
 		{
 			id: 1,
 			date: '25 Jun, 2022',
